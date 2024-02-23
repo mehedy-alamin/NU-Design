@@ -22,10 +22,10 @@ function HeaderGutter() {
     headerGutter.style.height = header.clientHeight + 'px'
 }
 
-function codeConfigOnLoad(){
+function resultInClick(){
     Toggler()
     HeaderGutter()
 }
 
-window.addEventListener('load', codeConfigOnLoad);
+window.addEventListener('load', resultInClick);
 

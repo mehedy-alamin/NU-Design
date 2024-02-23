@@ -25,7 +25,7 @@ html {
 
 html, body {
     height: 100%;
-    background-color: $primary;
+    
 }
 
 body {
@@ -44,9 +44,7 @@ img {
     height: auto;
     max-width: 100%;
 }
-section {
-    padding: 80px 0;
-}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -131,6 +129,10 @@ section {
     align-items: center;
 }
 
+.just-center {
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -161,6 +163,7 @@ section {
         list-style: none;
     }
 }
+
 .section-title {
     width: 100%;
     max-width: 780px;
@@ -168,7 +171,7 @@ section {
     text-align: center;
     
     h2 {
-        color: $text;
+        color: #A8ADB3;
         span {
             background: linear-gradient(90deg, #6B34E2 0.42%, #FD84FF 52.1%, #443A96 100%);
             background-clip: text;
@@ -185,6 +188,9 @@ section {
     background-repeat: no-repeat !important;
 }
 
+.section-gap {
+    margin: 50px;
+}
 
 /* #####################################
 *          TYPOGRAPHY SETTINGS
@@ -229,7 +235,7 @@ h5 {
     font-size: 18px;
     line-height: 19px;
     font-weight: 700;
-    color: $text;
+   
 }
 
 h6 {
@@ -243,4 +249,48 @@ p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    
 }
+
+.margin-0 {
+    margin: 0;
+}
+
+// Get Your Collage Wise Result Design //
+// Header-Section Start //
+.get-result-header {
+    .get-header-wrepper {
+        padding: 10px 0;
+
+        .result-header-link {
+            border: 1px solid gray;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 120px;
+            max-width: 100%;
+            text-align: center;
+        }
+        .nu-section {
+            gap: 5px;
+        }
+        .get-result-home {
+            .result-header-logo {
+                gap: 10px;
+                img {
+                    height: 40px;
+                    width: 30px;
+                }
+                h5 {
+                    @extend .margin-0 ;
+                }
+                
+            }
+
+        }
+        .get-result-service {
+            gap: 5px;
+        }
+    }
+}
+// Header-Section End //
+

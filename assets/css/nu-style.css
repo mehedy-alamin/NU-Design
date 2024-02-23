@@ -17,7 +17,6 @@ html {
 
 html, body {
   height: 100%;
-  background-color: #0D064A;
 }
 
 body {
@@ -34,10 +33,6 @@ body {
 img {
   height: auto;
   max-width: 100%;
-}
-
-section {
-  padding: 80px 0;
 }
 
 .container {
@@ -128,6 +123,12 @@ section {
           align-items: center;
 }
 
+.just-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -185,7 +186,7 @@ section {
   text-align: center;
 }
 .section-title h2 {
-  color: #FFF;
+  color: #A8ADB3;
 }
 .section-title h2 span {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.42%, #6B34E2), color-stop(52.1%, #FD84FF), to(#443A96));
@@ -199,6 +200,10 @@ section {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+.section-gap {
+  margin: 50px;
 }
 
 /* #####################################
@@ -243,7 +248,6 @@ h5 {
   font-size: 18px;
   line-height: 19px;
   font-weight: 700;
-  color: #FFF;
 }
 
 h6 {
@@ -257,4 +261,33 @@ p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.margin-0, .get-result-header .get-header-wrepper .get-result-home .result-header-logo h5 {
+  margin: 0;
+}
+
+.get-result-header .get-header-wrepper {
+  padding: 10px 0;
+}
+.get-result-header .get-header-wrepper .result-header-link {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 120px;
+  max-width: 100%;
+  text-align: center;
+}
+.get-result-header .get-header-wrepper .nu-section {
+  gap: 5px;
+}
+.get-result-header .get-header-wrepper .get-result-home .result-header-logo {
+  gap: 10px;
+}
+.get-result-header .get-header-wrepper .get-result-home .result-header-logo img {
+  height: 40px;
+  width: 30px;
+}
+.get-result-header .get-header-wrepper .get-result-service {
+  gap: 5px;
 }

@@ -40,13 +40,13 @@
     </div>
 </section>
 
-<section class="get-result-section section-gap">
+<section class="get-result-form section-gap">
     <div class="container">
         <div class="section-title">
             <h2>Get Your <span>Collage Wise</span> Result</h2>
         </div>
 
-        <div class="get-result-castom-part d-flex just-center">
+        <div class="get-result-custom-part d-flex flex-col align-center">
             <div class="result-category d-flex">
                 
                 <label for="collage-wise">
@@ -57,6 +57,62 @@
                     <input name="seclet year" type="radio" id="indevisual">
                     Indevisual Result</label>
             </div>
+            <form class="request-form d-flex flex-col text-center" action="get-result" method="get">
+                <select name="result-year" id="" required="true">
+                    <option value="default">Select Year</option>
+                    <option value="1st-year">1st Year</option>
+                    <option value="2nd-year">2nd Year</option>
+                    <option value="3rd-year">3rd Year</option>
+                    <option value="4th-year">4th Year</option>
+                    <option value="Masturs">Masturs</option>
+                </select>
+                <label class="collage-fill" for="collage">
+                    <input class="input-collage" type="text" name="Collage Name" id="collage">
+
+                    <div class="collage-list">
+                        <ul>
+                            <li>Collage Name</li>
+                            <li>Collage Name</li>
+                            <li>Collage Name</li>
+                            <li>Collage Name</li>
+                            <li>Collage Name</li>
+                        </ul>
+                    </div>
+                </label>
+                
+                <label class="subject-fill" for="subject">
+                    <input class="input-subject" type="text" name="Collage Name" id="collage">
+
+                    <div class="subject-list">
+                        <ul>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                        </ul>
+                    </div>
+                </label>
+
+                <label class="passing-year-fill" for="subject">
+                    <input class="passing-year" type="text" name="Collage Name" id="collage">
+
+                    <div class="passing-year-list">
+                        <ul>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                            <li>Subject Name</li>
+                        </ul>
+                    </div>
+                </label>
+                <div class="button-wrapper">
+
+                    <button class="get-btn" type="reset">Reset</button>
+                    <button class="get-btn" type="submit">Get Result</button>
+                </div>
+            </form>
         </div>
     </div>
 

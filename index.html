@@ -58,7 +58,7 @@
                     Indevisual Result</label>
             </div>
             <form class="request-form d-flex flex-col text-center" action="get-result" method="get">
-                <select name="result-year" id="" required="true">
+                <select class="result-year fill-design" name="result-year" id="" required="true">
                     <option value="default">Select Year</option>
                     <option value="1st-year">1st Year</option>
                     <option value="2nd-year">2nd Year</option>
@@ -67,48 +67,43 @@
                     <option value="Masturs">Masturs</option>
                 </select>
                 <label class="collage-fill" for="collage">
-                    <input class="input-collage" type="text" name="Collage Name" id="collage">
-
-                    <div class="collage-list">
-                        <ul>
+                    <input class="input-collage fill-design" type="text" name="Collage Name" id="collage" placeholder="Enter Your Collage Name">
+                    
+                        <ul class="collage-list list-design">
                             <li>Collage Name</li>
                             <li>Collage Name</li>
                             <li>Collage Name</li>
                             <li>Collage Name</li>
                             <li>Collage Name</li>
-                        </ul>
-                    </div>
+                        </ul>                  
                 </label>
                 
                 <label class="subject-fill" for="subject">
-                    <input class="input-subject" type="text" name="Collage Name" id="collage">
+                    <input class="input-subject fill-design" type="text" name="Collage Name" id="collage" placeholder="Enter Your Subject">
 
-                    <div class="subject-list">
-                        <ul>
+                        <ul class="subject-list list-design">
                             <li>Subject Name</li>
                             <li>Subject Name</li>
                             <li>Subject Name</li>
                             <li>Subject Name</li>
                             <li>Subject Name</li>
-                        </ul>
-                    </div>
+                        </ul>                 
                 </label>
 
                 <label class="passing-year-fill" for="subject">
-                    <input class="passing-year" type="text" name="Collage Name" id="collage">
+                    <input class="passing-year fill-design" type="text" name="Collage Name" id="collage" placeholder="Enter Your Passing Year">
 
-                    <div class="passing-year-list">
-                        <ul>
-                            <li>Subject Name</li>
-                            <li>Subject Name</li>
-                            <li>Subject Name</li>
-                            <li>Subject Name</li>
-                            <li>Subject Name</li>
+                   
+                        <ul class="passing-year-list list-design">
+                            <li>Year</li>
+                            <li>Year</li>
+                            <li>Year</li>
+                            <li>Year</li>
+                            <li>Year</li>
                         </ul>
-                    </div>
+                   
                 </label>
-                <div class="button-wrapper">
-
+                <div class="button-wrapper d-flex space-between">
                     <button class="get-btn" type="reset">Reset</button>
                     <button class="get-btn" type="submit">Get Result</button>
                 </div>

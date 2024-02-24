@@ -256,6 +256,19 @@ p {
     margin: 0;
 }
 
+.d-none {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+        width: 80%;
+    }
+}
 // Get Your Collage Wise Result Design //
 // Header-Section Start //
 .get-result-header {
@@ -305,46 +318,72 @@ p {
 // Header Nev Section End //
 
 // Request Result Section Start //
+.fill-design {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 5px;
+    margin: 20px 0;
+}
+.list-design {
+    padding: 5px;
+    
+    li {
+       color: black;
+        background: #A8ADB3;
+        &:nth-child(2n) {
+            background: white;
+        }
+    }
+}
 .get-result-form {
     .get-result-custom-part{
 
     }
     .request-form {
+        width: 100%;
+        max-width: 700px;
+        padding: 30px 20px;
+        background: #443A96;
+
         .result-year {
+           
+        }
 
+        .collage-fill {
+            .input-collage {
+    
+            }
+            .collage-list {
+    
+            }
+        }
+    
+        .subject-fill {
+            .input-subject {
+    
+            }
+            .subject-list {
+    
+            }
+        }
+    
+        .passing-year-fill {
+            .passing-year {
+    
+            }
+            .passing-year-list {
+    
+            }
+        }
+        .button-wrapper {
+            .get-btn {
+    
+            }
         }
     }
-    .collage-fill {
-        .input-collage {
+    
 
-        }
-        .collage-list {
-
-        }
-    }
-
-    .subject-fill {
-        .input-subject {
-
-        }
-        .subject-list {
-
-        }
-    }
-
-    .passing-year-fill {
-        .passing-year {
-
-        }
-        .passing-year-list {
-
-        }
-    }
-
-    .button-wrapper {
-        .get-btn {
-            
-        }
-    }
+    
 }
 // Request Result Section End //

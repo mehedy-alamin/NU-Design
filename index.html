@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your Collage Wise Result</title>
-    <link rel="stylesheet" href="/assets/fonts/google-fonts.css">
-    <link rel="stylesheet" href="/assets/css/nu-style.css">
+
+    <link rel="desine-font" href="./assets/fonts/google-fonts.css">
+
+    <link rel="stylesheet" href="./assets/css/nu-style.css">
+
 </head>
 <body>
 <header class="get-result-header">
+    <div class="campaine-banner">
+        <div class="timer-wrepper flex-center">
+            <div class="timer days flex-center flex-col">
+                <h3 id="days">5</h3>
+                <label for="days">Days</label>
+            </div>
+            <div class="timer hours flex-center flex-col">
+                <h3 id="hours">5</h3>
+                <label for="hours">Hours</label>
+            </div>
+            <div class="timer minute flex-center flex-col">
+                <h3 id="minute">5</h3>
+                <label for="minute">Minites</label>
+            </div>
+            <div class="timer second flex-center flex-col">
+                <h3 id="second">5</h3>
+                <label for="second">Seconds</label>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="get-header-wrepper d-flex align-center space-between">
             <div class="nu-section d-flex">
@@ -58,7 +81,8 @@
                     Indevisual Result</label>
             </div>
             <form class="request-form d-flex flex-col text-center" action="get-result" method="get">
-                <select class="result-year fill-design" name="result-year" id="" required="true">
+                <select class="result-year fill-design" 
+                name="result-year" id="" required="true">
                     <option value="default">Select Year</option>
                     <option value="1st-year">1st Year</option>
                     <option value="2nd-year">2nd Year</option>
@@ -69,13 +93,13 @@
                 <label class="collage-fill" for="collage">
                     <input class="input-collage fill-design" type="text" name="Collage Name" id="collage" placeholder="Enter Your Collage Name">
                     
-                        <ul class="collage-list list-design">
-                            <li>Collage Name</li>
-                            <li>Collage Name</li>
-                            <li>Collage Name</li>
-                            <li>Collage Name</li>
-                            <li>Collage Name</li>
-                        </ul>                  
+                    <ul class="collage-list list-design">
+                        <li>Collage Name</li>
+                        <li>Collage Name</li>
+                        <li>Collage Name</li>
+                        <li>Collage Name</li>
+                        <li>Collage Name</li>
+                    </ul>                  
                 </label>
                 
                 <label class="subject-fill" for="subject">
@@ -103,18 +127,63 @@
                         </ul>
                    
                 </label>
-                <div class="button-wrapper d-flex space-between">
+                <div class="button-wrapper d-flex">
                     <button class="get-btn" type="reset">Reset</button>
                     <button class="get-btn" type="submit">Get Result</button>
                 </div>
             </form>
         </div>
     </div>
+</section>
 
+<section class="clock-banner">
+    <div class="clock-wrepper flex-center">
+        
+        <div class="clock hours flex-center flex-col">
+            <h3 id="clockHours">5</h3>
+            <label>Hours</label>
+        </div>
+        <div class="clock minute flex-center flex-col">
+            <h3 id="clockMinute">5</h3>
+            <label>Minites</label>
+        </div>
+        <div class="clock second flex-center flex-col">
+            <h3 id="clockSecond">5</h3>
+            <label>Seconds</label>
+        </div>
+        <div class="clock derection flex-center flex-col">
+            <h3 id="clockDerection"></h3>
+        </div>
+    </div>
 </section>
 
 
+<section class="analog-clock">
+    <div class="clock-wrapper p-relative">
+        <div class="clock-fame p-relative">
+            <i style="--i: 1"> <span>1</span></i>
+            <i style="--i: 2"> <span>2</span></i>
+            <i style="--i: 3"> <span>3</span></i>
+            <i style="--i: 4"> <span>4</span></i>
+            <i style="--i: 5"> <span>5</span></i>
+            <i style="--i: 6"> <span>6</span></i>
+            <i style="--i: 7"> <span>7</span></i>
+            <i style="--i: 8"> <span>8</span></i>
+            <i style="--i: 9"> <span>9</span></i>
+            <i style="--i: 10"> <span>10</span></i>
+            <i style="--i: 11"> <span>11</span></i>
+            <i style="--i: 12"> <span>12</span></i>
+        </div>
+        <div class="strick p-absolute">
+            <div id="analogHours" class="hours p-absolute"></div>
+            <div id="analogMinute" class="minute p-absolute"></div>
+            <div id="analogSecond" class="second p-absolute"></div>
+        </div>
+    </div>
+</section>
 
-<script src="./assets/js/nu-style.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="./assets/js/nu-script.js"></script>
 </body>
 </html>

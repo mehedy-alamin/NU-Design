@@ -288,6 +288,142 @@ ul li {
   width: 80%;
 }
 
+.campaine-banner {
+  background-color: #0D064A;
+}
+.campaine-banner .timer-wrepper {
+  padding: 10px 0;
+  gap: 10px;
+}
+.campaine-banner .timer-wrepper .timer {
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: #89A3FF;
+  padding: 7px 0;
+}
+.campaine-banner .timer-wrepper .timer h3, .campaine-banner .timer-wrepper .timer label {
+  color: #ffffff;
+  margin: 0;
+}
+.campaine-banner .timer-wrepper .timer h3 {
+  line-height: 45px;
+}
+.campaine-banner .timer-wrepper .timer label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.clock-banner {
+  margin-top: 50px;
+  background-color: #A8ADB3;
+}
+.clock-banner .clock-wrepper {
+  padding: 10px 0;
+  gap: 10px;
+}
+.clock-banner .clock-wrepper .clock {
+  width: 80px;
+  border: 1px solid rgb(248, 6, 6);
+  border-radius: 8px;
+  background: #89A3FF;
+  padding: 7px 0;
+}
+.clock-banner .clock-wrepper .clock h3, .clock-banner .clock-wrepper .clock label {
+  color: #000000;
+  margin: 0;
+}
+.clock-banner .clock-wrepper .clock h3 {
+  font-size: 28px;
+  line-height: 30px;
+}
+.clock-banner .clock-wrepper .clock label {
+  font-size: 14px;
+  line-height: 16px;
+}
+.clock-banner .clock-wrepper .clock.derection {
+  width: inherit;
+  padding: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.clock-banner .clock-wrepper .clock.derection h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.analog-clock .clock-wrapper {
+  height: 300px;
+  width: 300px;
+  margin: 50px auto;
+  border: #0D064A 2px solid;
+  border-radius: 50%;
+}
+.analog-clock .clock-wrapper .clock-fame {
+  height: 100%;
+  width: 100%;
+}
+.analog-clock .clock-wrapper .clock-fame i {
+  position: absolute;
+  inset: 5px;
+  text-align: center;
+  -webkit-transform: rotate(calc(var(--i) * 30deg));
+          transform: rotate(calc(var(--i) * 30deg));
+}
+.analog-clock .clock-wrapper .clock-fame i span {
+  color: #0D064A;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transform: rotate(calc(var(--i) * -30deg));
+          transform: rotate(calc(var(--i) * -30deg));
+}
+.analog-clock .clock-wrapper .strick {
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.analog-clock .clock-wrapper .strick::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.analog-clock .clock-wrapper .strick .hours, .analog-clock .clock-wrapper .strick .minute, .analog-clock .clock-wrapper .strick .second {
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.analog-clock .clock-wrapper .strick .hours {
+  top: calc(50% - 50px);
+  height: 50px;
+  width: 5px;
+  background: red;
+}
+.analog-clock .clock-wrapper .strick .minute {
+  top: calc(50% - 80px);
+  height: 80px;
+  width: 3px;
+  background: rgb(0, 255, 128);
+}
+.analog-clock .clock-wrapper .strick .second {
+  top: calc(50% - 100px);
+  height: 100px;
+  width: 1px;
+  background: rgb(200, 255, 0);
+}
+
 .get-result-header .get-header-wrepper {
   padding: 10px 0;
 }
@@ -299,8 +435,24 @@ ul li {
   max-width: 100%;
   text-align: center;
 }
-.get-result-header .get-header-wrepper .nu-section {
+@media only screen and (max-width: 640px) {
+  .get-result-header .get-header-wrepper .result-header-link {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px;
+    width: 106px;
+  }
+}
+.get-result-header .get-header-wrepper .nu-section, .get-result-header .get-header-wrepper .get-result-service {
   gap: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .get-result-header .get-header-wrepper .nu-section, .get-result-header .get-header-wrepper .get-result-service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .get-result-header .get-header-wrepper .get-result-home .result-header-logo {
   gap: 10px;
@@ -309,20 +461,25 @@ ul li {
   height: 40px;
   width: 30px;
 }
-.get-result-header .get-header-wrepper .get-result-service {
-  gap: 5px;
+.get-result-nevbar {
+  border: solid 1px;
+  border-color: red transparent;
 }
-
 .fill-design {
   width: 100%;
   font-size: 16px;
   line-height: 22px;
   padding: 5px;
   margin: 20px 0;
+  border-radius: 4px;
 }
 
 .list-design {
   padding: 5px;
+  display: none;
+  border-radius: 4px;
+  height: 80px;
+  overflow-y: scroll;
 }
 .list-design li {
   color: black;
@@ -337,4 +494,14 @@ ul li {
   max-width: 700px;
   padding: 30px 20px;
   background: #443A96;
+}
+.get-result-form .request-form .button-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.get-result-form .request-form .button-wrapper .get-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
 }

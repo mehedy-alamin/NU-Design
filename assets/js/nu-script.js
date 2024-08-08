@@ -60,7 +60,15 @@ window.addEventListener('DOMContentLoaded' , function(){
         const tergetTime = new Date("Aug 7 , 2024 00:00:00") .getTime();
     
         let differencSec = (tergetTime - curentTime) / 1000;
-    
+
+           
+    if(differencSec < 0){
+
+        clearInterval(time);
+        document.querySelector(".timer-wrepper").innerHTML = "<h4>EXPIRED</h4>";
+        
+    }
+
         let days = Math.floor(differencSec / (60 * 60 * 24));
     
         let hours = Math.floor((differencSec % (60 * 60 * 24)) / (60 * 60));
@@ -85,12 +93,15 @@ window.addEventListener('DOMContentLoaded' , function(){
             seconds = "0" + seconds;
         }
 
+
         document.getElementById('days').innerHTML = days;
         document.getElementById('hours').innerHTML = hours;
         document.getElementById('minute').innerHTML = minutes;
         document.getElementById('second').innerHTML = seconds;
 
-    });
+    })
+
+    ;
 
    let clock = setInterval (function(){
         let curentMinute = new Date().getMinutes();
